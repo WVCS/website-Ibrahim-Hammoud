@@ -6,7 +6,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 h3 {
@@ -16,7 +16,6 @@ h3 {
   text-shadow: 2px 2px 4px #555;
   position: relative;
   display: inline-block;
-  margin-top: 50px;
   animation: pulse 1.5s infinite, tilt 4s ease-in-out infinite, spin 6s linear infinite;
 }
 
