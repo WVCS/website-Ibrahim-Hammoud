@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 body {
-  background: linear-gradient(135deg, #ff6700, #780000); /* Solid gradient from orange to dark red */
+  background: linear-gradient(135deg, #ff6700, #780000);
   height: 100vh;
   margin: 0;
   display: flex;
@@ -17,6 +17,7 @@ h3 {
   position: relative;
   display: inline-block;
   margin-top: 50px;
+  animation: pulse 1.5s infinite, tilt 4s ease-in-out infinite, spin 6s linear infinite;
 }
 
 h3::after {
@@ -30,3 +31,35 @@ h3::after {
   box-shadow: 0 0 8px #ff6700;
 }
 
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes tilt {
+  0%, 100% {
+    transform: rotate(0deg) skew(5deg, -5deg);
+  }
+  25% {
+    transform: rotate(15deg) skew(-10deg, 10deg);
+  }
+  50% {
+    transform: rotate(-15deg) skew(5deg, -5deg);
+  }
+  75% {
+    transform: rotate(10deg) skew(-5deg, 5deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
