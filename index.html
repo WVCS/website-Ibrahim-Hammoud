@@ -1,9 +1,43 @@
 <html>
-
-
-
-
-
-
-
+<head>
+  <title>Ibrahim's Cool Website</title>
+</head>
+<body>
+  <center>
+    <h3>Ibrahim's Website</h3>
+  </center>
+</body>
 </html>
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+  background: linear-gradient(135deg, #ff6700, #780000); /* Solid gradient from orange to dark red */
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h3 {
+  color: #fff;
+  font-size: 200%;
+  font-family: 'Quicksand', sans-serif;
+  text-shadow: 2px 2px 4px #555;
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #780000, #ff6700);
+  box-shadow: 0 0 8px #ff6700;
+}
+
