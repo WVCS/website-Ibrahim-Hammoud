@@ -6,7 +6,8 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Align content to the top */
+  padding-top: 50px; /* Adds space at the top */
 }
 
 h3 {
