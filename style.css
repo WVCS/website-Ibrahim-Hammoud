@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 100px; 
+  padding-top: 80px; /* Adjusted for a little more space at the top */
 }
 
 nav {
@@ -23,7 +23,7 @@ nav {
   padding: 15px 40px;
   border-radius: 10px;
   z-index: 10;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add subtle shadow to navbar */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
@@ -50,7 +50,7 @@ nav a::after {
 }
 
 nav a:hover {
-  color: #ff6700; /* Change text color on hover */
+  color: #ff6700;
   padding-bottom: 10px;
 }
 
@@ -66,7 +66,7 @@ h3 {
   position: relative;
   display: inline-block;
   animation: pulseTilt 10s ease-in-out infinite;
-  margin-top: 80px;
+  margin-top: 60px; /* Adjusted to move the title up more */
 }
 
 h3::after {
@@ -100,7 +100,7 @@ h3::after {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   width: 80%;
-  margin-top: 120px; /* Add extra space to avoid overlap with navbar */
+  margin-top: 120px; /* Increased top margin for more space below the title */
 }
 
 .project-box {
