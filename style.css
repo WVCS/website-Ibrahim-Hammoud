@@ -24,9 +24,9 @@ nav {
 nav a {
   color: #fff;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 30px; /* Increased space between links */
   font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
+  font-size: 22px; /* Bigger text size */
   padding: 5px 10px;
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -42,10 +42,9 @@ h3 {
   font-size: 200%;
   font-family: 'Quicksand', sans-serif;
   text-shadow: 2px 2px 4px #555;
-  margin-top: 100px; /* Adjusted for navbar space */
+  margin-top: 150px; /* Moved further down */
   position: relative;
   display: inline-block;
-  animation: pulseTilt 10s ease-in-out infinite;
 }
 
 h3::after {
@@ -57,19 +56,4 @@ h3::after {
   height: 3px;
   background: linear-gradient(90deg, #780000, #ff6700);
   box-shadow: 0 0 8px #ff6700;
-}
-
-@keyframes pulseTilt {
-  0%, 100% {
-    transform: scale(1) rotate(0deg) skew(1deg, -1deg);
-  }
-  25% {
-    transform: scale(1.05) rotate(2deg) skew(-1deg, 1deg);
-  }
-  50% {
-    transform: scale(0.98) rotate(-2deg) skew(1deg, -1deg);
-  }
-  75% {
-    transform: scale(1.02) rotate(1deg) skew(-1deg, 1deg);
-  }
 }
