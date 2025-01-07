@@ -2,6 +2,7 @@
 
 body {
   background: linear-gradient(135deg, #ff6700, #780000);
+  background-size: cover;
   height: 100vh;
   margin: 0;
   font-family: 'Quicksand', sans-serif;
@@ -9,7 +10,9 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 80px; /* Adjusted for a little more space at the top */
+  padding-top: 80px;
+  position: relative;
+  overflow-x: hidden; /* Ensure no horizontal scroll */
 }
 
 nav {
@@ -66,7 +69,7 @@ h3 {
   position: relative;
   display: inline-block;
   animation: pulseTilt 10s ease-in-out infinite;
-  margin-top: 60px; /* Adjusted to move the title up more */
+  margin-top: 60px;
 }
 
 h3::after {
@@ -100,7 +103,7 @@ h3::after {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   width: 80%;
-  margin-top: 120px; /* Increased top margin for more space below the title */
+  margin-top: 120px;
 }
 
 .project-box {
@@ -130,4 +133,15 @@ h3::after {
 
 .project-embed iframe {
   border-radius: 10px;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(120, 0, 0, 0.8), #780000);
+  z-index: -1;
 }
