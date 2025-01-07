@@ -2,8 +2,9 @@
 
 body {
   background: linear-gradient(135deg, #ff6700, #780000);
+  background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  min-height: 100%;
   margin: 0;
   font-family: 'Quicksand', sans-serif;
   display: flex;
@@ -12,7 +13,6 @@ body {
   align-items: center;
   padding-top: 80px;
   position: relative;
-  overflow-x: hidden; /* Ensure no horizontal scroll */
 }
 
 nav {
