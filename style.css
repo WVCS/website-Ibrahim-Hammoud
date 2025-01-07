@@ -89,8 +89,9 @@ h3::after {
 
 .project-box h4 {
   color: #780000;
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin: 0;
+  font-weight: bold;
 }
 
 .project-embed {
