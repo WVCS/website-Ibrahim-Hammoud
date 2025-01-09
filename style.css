@@ -139,18 +139,18 @@ h3::after {
 
 
 
+/* Fix for content being cut off */
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; 
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  min-height: 100vh; /* Ensure content spans the entire height */
 }
 
-#mainContainer {
-  width: 100%;
-  height: 100%;
+/* Ensure containers are centered and responsive */
+.container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh; /* Full height of the viewport */
+  margin: auto;
 }
