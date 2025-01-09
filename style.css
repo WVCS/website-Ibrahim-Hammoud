@@ -133,11 +133,11 @@ h3::after {
 
 .project-embed iframe {
   border-radius: 10px;
-  width: 485px;
-  height: 402px;
+  width: 100%;
+  height: calc(100vh - 140px); /* Adjust height dynamically */
+  max-width: 800px; /* Prevent it from being too wide */
+  border: none;
 }
-
-
 
 /* Fix for content being cut off */
 html, body {
