@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 20px; /* Adjusted to move content up */
+  padding-top: 20px;
   position: relative;
   min-height: 100vh;
 }
@@ -133,10 +133,8 @@ h3::after {
 
 .project-embed iframe {
   border-radius: 10px;
-  width: 100%;
-  height: calc(100vh - 140px); /* Adjust height dynamically */
-  max-width: 800px; /* Prevent it from being too wide */
   border: none;
+  margin-top: 50px; /* Centers the iframe lower than the title */
 }
 
 /* Fix for content being cut off */
